@@ -19,7 +19,6 @@ Data scientist with a focus on applied AI and generative AI solutions (M.Sc. Dat
 **Featured**
 
 - [energiewende-agent](https://github.com/Omercan4/energiewende-agent): An LLM agent (LangGraph) that answers German energy questions with live data APIs (SMARD, Open-Meteo) and RAG over 99 Bundestag documents (LlamaIndex, Chroma, local embeddings). Evaluated with 30 test questions and an LLM judge, with 8 runs tracked in MLflow (numbers 100% correct, up to 87% fully correct answers). FastAPI, Docker, GitHub Actions CI and a deployment on Azure Container Apps. Ongoing.
-- [Python-for-AI-Driven-Automation](https://github.com/Omercan4/Python-for-AI-Driven-Automation): A hands-on, self-paced course from the first line of Python to a real AI-powered automation.
 
 **More projects from my studies, all in [My-Projects](https://github.com/Omercan4/My-Projects)**
 
