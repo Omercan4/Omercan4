@@ -18,7 +18,8 @@ Data scientist with a focus on applied AI and generative AI solutions (M.Sc. Dat
 
 **Featured**
 
-- [energiewende-agent](https://github.com/Omercan4/energiewende-agent): An LLM agent (LangGraph) that answers German energy questions with live data APIs (SMARD, Open-Meteo) and RAG over 99 Bundestag documents (LlamaIndex, Chroma, local embeddings). Evaluated with 30 test questions and an LLM judge, with 8 runs tracked in MLflow (numbers 100% correct, up to 87% fully correct answers). FastAPI, Docker, GitHub Actions CI and a deployment on Azure Container Apps. Ongoing.
+- [energiewende-agent](https://github.com/Omercan4/energiewende-agent): An LLM agent (LangGraph) that answers German energy questions with live data APIs (SMARD, Open-Meteo), a price forecast tool and RAG over 99 Bundestag documents (LlamaIndex, Chroma, filters by party and paper type). Evaluated with 35 test questions and an LLM judge, tracked in MLflow (numbers 100% correct, 94% of answers fully correct). FastAPI, Docker, GitHub Actions CI and a deployment on Azure Container Apps.
+- [energy-price-forecast](https://github.com/Omercan4/energy-price-forecast): Day-ahead electricity price forecast for Germany with LightGBM quantile models and a conformal 80% prediction interval. In a 12-month rolling backtest (every month forecast by a model trained on earlier data only) the error is 47.6% lower than "same hour last week" (MAE 19.6 vs 37.4 EUR/MWh) and the interval covers 79% of real prices. Includes anomaly detection, SHAP, MLflow, a FastAPI service and a daily GitHub Action that forecasts, scores finished days, checks input drift and updates a [live page](https://omercan4.github.io/energy-price-forecast/).
 
 **More projects from my studies, all in [My-Projects](https://github.com/Omercan4/My-Projects)**
 
@@ -35,7 +36,7 @@ My master's thesis tool is an internal project, so the code is not public.
 
 - **Generative AI and LLMs:** multimodal models (ChatGPT, Claude, Gemini), RAG, GraphRAG, prompt engineering, API integration, knowledge graphs, agents (LangGraph)
 - **Programming:** Python (NumPy, pandas, scikit-learn), R, SQL, C/C++; modular codebases and Git
-- **Machine learning and statistics:** regression, classification, neural networks, Bayesian inference (Stan), time series and forecasting, simulation-based inference, process automation
+- **Machine learning and statistics:** regression, classification, neural networks, Bayesian inference (Stan), time series and forecasting, gradient boosting (LightGBM), prediction intervals, anomaly detection, simulation-based inference, process automation
 - **Tools and deployment:** FastAPI, MLflow, Docker, GitHub Actions, Azure, Databricks (introductory), simulation (SimPy, ARENA), LaTeX, Microsoft Office
 
 ## Languages
