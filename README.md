@@ -1,6 +1,6 @@
 # Hi, I'm Ömercan
 
-Data scientist with a focus on applied AI and generative AI solutions (M.Sc. Data Science at TU Dortmund, graduating December 2026) and an industrial engineering background. Hands-on experience building multimodal LLM pipelines (ChatGPT, Claude, Gemini), modeling knowledge graphs and automating previously manual business processes in Python in an industrial setting. Solid foundation in statistics, machine learning, Bayesian inference, simulation, optimization and software engineering, combined with a disciplined, solution-oriented and analytical way of working. Track record of leading teams and delivering results under pressure.
+Data scientist with a focus on applied AI and generative AI solutions (M.Sc. Data Science at TU Dortmund, graduating December 2026) and an industrial engineering background. Hands-on experience building multimodal LLM pipelines (ChatGPT, Claude, Gemini), modeling knowledge graphs and automating previously manual business processes in Python in an industrial setting. Solid foundation in statistics, machine learning, Bayesian inference, simulation, optimization, and coding combined with a disciplined, solution-oriented and analytical way of working. Track record of leading teams and delivering results under pressure.
 
 ## Education
 
