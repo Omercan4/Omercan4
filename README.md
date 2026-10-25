@@ -20,6 +20,7 @@ Data scientist with a focus on applied AI and generative AI solutions (M.Sc. Dat
 
 - [energiewende-agent](https://github.com/Omercan4/energiewende-agent): An LLM agent (LangGraph) that answers German energy questions with live data APIs (SMARD, Open-Meteo), a price forecast tool and RAG over 99 Bundestag documents (LlamaIndex, Chroma, filters by party and paper type). Evaluated with 35 test questions and an LLM judge, tracked in MLflow (numbers 100% correct, 94% of answers fully correct). FastAPI, Docker, GitHub Actions CI and a deployment on Azure Container Apps.
 - [energy-price-forecast](https://github.com/Omercan4/energy-price-forecast): Day-ahead electricity price forecast for Germany with LightGBM quantile models and a conformal 80% prediction interval. In a 12-month rolling backtest (every month forecast by a model trained on earlier data only) the error (MAE 19.6 EUR/MWh) is 22.3% lower than the best classical baseline, Holt-Winters exponential smoothing (25.2), and 47.6% lower than the seasonal naive forecast with m=168 (37.4); the interval covers 79% of real prices. Includes anomaly detection, SHAP, MLflow, a FastAPI service and a daily GitHub Action that forecasts, scores finished days, checks input drift and updates a [live page](https://omercan4.github.io/energy-price-forecast/).
+- [credit-risk-scorecard](https://github.com/Omercan4/credit-risk-scorecard): A loan scorecard built the way a bank would build it, on 2.26 M Lending Club loans: WoE binning and a logistic points scorecard that gives the top 3 reasons for every decision, a gate that admits only information known at application time, time cross-validation on 2007–2014 and one out-of-time test on 2015 (Gini 0.30; LightGBM challenger 0.34; the lender's own grade 0.36). Includes a profit-based decision rule, a reject-bias analysis and monitoring after go-live (PSI/CSI, early defaults observed vs expected), which caught a 1.49× drift in defaults while the inputs stayed stable. FastAPI service and a [live page](https://omercan4.github.io/credit-risk-scorecard/) to score an application.
 
 **More projects from my studies, all in [My-Projects](https://github.com/Omercan4/My-Projects)**
 
@@ -36,7 +37,7 @@ My master's thesis tool is an internal project, so the code is not public.
 
 - **Generative AI and LLMs:** multimodal models (ChatGPT, Claude, Gemini), RAG, GraphRAG, prompt engineering, API integration, knowledge graphs, agents (LangGraph)
 - **Programming:** Python (NumPy, pandas, scikit-learn), R, SQL, C/C++; modular codebases and Git
-- **Machine learning and statistics:** regression, classification, neural networks, Bayesian inference (Stan), time series and forecasting, gradient boosting (LightGBM), prediction intervals, anomaly detection, simulation-based inference, process automation
+- **Machine learning and statistics:** regression, classification, neural networks, Bayesian inference (Stan), time series and forecasting, gradient boosting (LightGBM), prediction intervals, anomaly detection, credit scorecards (WoE/IV, out-of-time validation, PSI/CSI monitoring), simulation-based inference, process automation
 - **Tools and deployment:** FastAPI, MLflow, Docker, GitHub Actions, Azure, Databricks (introductory), simulation (SimPy, ARENA), LaTeX, Microsoft Office
 
 ## Languages
