@@ -2,10 +2,6 @@
 
 I'm a data scientist and I finish my M.Sc. Data Science at TU Dortmund in December 2026. My background is industrial engineering. I build AI systems that are planned before they are built, that can be measured, and that are made to be used for a long time. I work in applied AI and GenAI, forecasting and time series, statistical modelling, optimization and simulation.
 
-| 22.3 % | 94 % | ~19× | 0.30 Gini |
-|:---:|:---:|:---:|:---:|
-| lower forecast error than the best classical baseline | of agent answers fully correct (35 questions, LLM judge) | faster patent analysis than by hand (Böllhoff IP7 tool, 25 patents) | out-of-time, on a bank-style loan scorecard |
-
 ## Recent projects
 
 <table>
@@ -13,11 +9,13 @@ I'm a data scientist and I finish my M.Sc. Data Science at TU Dortmund in Decemb
 <td width="50%" valign="top">
 <a href="https://github.com/Omercan4/energiewende-agent"><img src="https://raw.githubusercontent.com/Omercan4/energiewende-agent/main/docs/img/social-preview.png" alt="energiewende-agent"></a>
 <b><a href="https://github.com/Omercan4/energiewende-agent">energiewende-agent</a></b><br>
+<b>Result: 94 % of the answers fully correct (35 test questions, LLM judge).</b><br>
 An LLM agent (LangGraph) that answers questions about German energy. Python calculates the numbers and the LLM explains them. It uses live data APIs, a price forecast tool and RAG over 99 Bundestag documents, and it names its sources. I tested it with 35 questions and an LLM judge in MLflow. FastAPI, Docker, CI, Azure.
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/Omercan4/energy-price-forecast"><img src="https://raw.githubusercontent.com/Omercan4/energy-price-forecast/main/docs/img/social-preview.png" alt="energy-price-forecast"></a>
 <b><a href="https://github.com/Omercan4/energy-price-forecast">energy-price-forecast</a></b><br>
+<b>Result: 22.3 % lower error than the best classical baseline.</b><br>
 Day-ahead electricity prices for Germany with LightGBM quantile models and an 80 % prediction interval (79 % measured). I tested it with a 12-month rolling backtest. It includes anomaly detection, and a daily GitHub Action scores finished days and checks drift. <a href="https://omercan4.github.io/energy-price-forecast/">Live page</a>.
 </td>
 </tr>
@@ -25,6 +23,7 @@ Day-ahead electricity prices for Germany with LightGBM quantile models and an 80
 <td width="50%" valign="top">
 <a href="https://github.com/Omercan4/credit-risk-scorecard"><img src="https://raw.githubusercontent.com/Omercan4/credit-risk-scorecard/main/docs/img/social-preview.png" alt="credit-risk-scorecard"></a>
 <b><a href="https://github.com/Omercan4/credit-risk-scorecard">credit-risk-scorecard</a></b><br>
+<b>Result: Gini 0.30 on a later year than the training data.</b><br>
 A loan scorecard built the way a bank builds it, on 2.26 million Lending Club loans. It uses WoE binning, gives reasons for every decision, and is tested on a later year than it was trained on. It also has a profit-based cut-off, a reject-bias analysis and monitoring that caught a 1.49× drift in defaults. <a href="https://omercan4.github.io/credit-risk-scorecard/">Live page</a>.
 </td>
 <td width="50%" valign="top">
