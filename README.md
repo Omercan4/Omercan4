@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <img src="assets/banner-light.png" alt="Ömercan Misirlioglu: data science, applied AI and forecasting" width="100%">
+</picture>
+
 # Hi, I'm Ömercan
 
 I'm a data scientist and I finish my M.Sc. Data Science at TU Dortmund in December 2026. My background is industrial engineering. I build AI systems that are planned before they are built, that can be measured, and that are made to be used for a long time. I work in applied AI and GenAI, forecasting and time series, statistical modelling, optimization and simulation.
