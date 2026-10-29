@@ -1,8 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-  <img src="assets/banner-light.png" alt="Ömercan Misirlioglu: data science, applied AI and forecasting" width="100%">
-</picture>
-
 # Hi, I'm Ömercan
 
 I'm a data scientist and I finish my M.Sc. Data Science at TU Dortmund in December 2026. My background is industrial engineering. I build AI systems that are planned before they are built, that can be measured, and that are made to be used for a long time. I work in applied AI and GenAI, forecasting and time series, statistical modelling, optimization and simulation.
@@ -32,7 +27,8 @@ Day-ahead electricity prices for Germany with LightGBM quantile models and an 80
 A loan scorecard built the way a bank builds it, on 2.26 million Lending Club loans. It uses WoE binning, gives reasons for every decision, and is tested on a later year than it was trained on. It also has a profit-based cut-off, a reject-bias analysis and monitoring that caught a 1.49× drift in defaults. <a href="https://omercan4.github.io/credit-risk-scorecard/">Live page</a>.
 </td>
 <td width="50%" valign="top">
-<b>Patent Scout</b> (company tool, code is private, <a href="#patent-scout-an-ai-tool-for-patent-engineers">details below</a>)<br><br>
+<a href="#patent-scout-an-ai-tool-for-patent-engineers"><img src="https://raw.githubusercontent.com/Omercan4/Omercan4/main/assets/patent-scout.png" alt="Patent Scout"></a>
+<b>Patent Scout</b> (company tool, code is private, <a href="#patent-scout-an-ai-tool-for-patent-engineers">details below</a>)<br>
 An AI tool for the patent engineers at Böllhoff. It automates a large part of the search for products that may infringe a patent. I built the backend and the web front end myself, and I keep changing it with the engineers' feedback.
 </td>
 </tr>
@@ -76,6 +72,8 @@ flowchart LR
 - I work on the prompts as a part of the product: I write, test and improve them, and I built a prompt editor into the tool. Engineers can open a prompt, change it and save it as a new version. Nothing is overwritten, so versions can be compared and a bad change can be undone.
 - I change it with the engineers' feedback. The engineer always has the last word, and a correction is saved next to the model's answer.
 - I tested it like software, with automated tests, an offline end-to-end test and documentation, so others can install and maintain it.
+
+**An earlier tool for the same team, with measured numbers.** Before Patent Scout I built a batch tool that asks an LLM the same question about many patents from the IP7 database in parallel and writes the answers to Excel. I measured it on 25 real patents: 40 seconds with 10 parallel queries and 138 seconds one after another, so the parallel queries alone are 3.5 times faster. A patent engineer estimates at least 30 seconds per patent by hand, which is about 12 minutes for the same 25 patents. That makes the tool about 19 times faster than the manual work. Extrapolated to 500 patents, it is about 15 minutes against at least 4 hours.
 
 **Where I am taking it.** Make it ready for long-term use, lower the cost per analysis, increase the precision and correctness of the answers and reduce the manual work of the engineers even more.
 
